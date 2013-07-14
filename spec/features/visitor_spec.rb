@@ -26,6 +26,7 @@ describe 'Visitor' do  #describes the 'who'
 # As a visitor, I want to see a specifci product on a product page
   context 'vists the product page' do
     it "should show the product" do
+      product = FactoryGirl.create(:product)
       visit root_path
       click_link ("Show Product")
     end
