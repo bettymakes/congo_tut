@@ -29,6 +29,9 @@ describe 'Visitor' do  #describes the 'who'
       product = FactoryGirl.create(:product)
       visit root_path
       click_link ("Show Product")
+      page.should have_content(product.name)
+      page.should have_content(product.description)
+      page.should have_content(product.price)
     end
   end
 end
