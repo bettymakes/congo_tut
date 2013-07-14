@@ -17,4 +17,9 @@ describe 'Visitor' do  #describes the 'who'
       page.should have_content(product.price)
     end
   end
+
+  context 'vists the product page' do
+    visit root_path
+    click_link ("Show Product")
+  end
 end
