@@ -1,6 +1,10 @@
 require 'spec_helper'
 
 describe 'Visitor' do  #describes the 'who'
+
+
+# User Story (1):
+# As a visitor, I want to visit the homepage and see a list of products
   context 'visits the front page' do #context does the 'what' the 'who' is doing
     it {should visit root_path} #it, is the test
     it 'displays content on page' do
@@ -18,6 +22,8 @@ describe 'Visitor' do  #describes the 'who'
     end
   end
 
+# User Story (2):
+# As a visitor, I want to see a specifci product on a product page
   context 'vists the product page' do
     visit root_path
     click_link ("Show Product")
