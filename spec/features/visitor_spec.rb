@@ -25,7 +25,9 @@ describe 'Visitor' do  #describes the 'who'
 # User Story (2):
 # As a visitor, I want to see a specifci product on a product page
   context 'vists the product page' do
-    visit root_path
-    click_link ("Show Product")
+    it "should show the product" do
+      visit root_path
+      click_link ("Show Product")
+    end
   end
 end

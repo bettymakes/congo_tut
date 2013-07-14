@@ -5,5 +5,9 @@
       <td>Description: <%= product.description %></td>
       <td>Price: $<%= product.price %></td>
     </tr>
+    <div>
+      <%= link_to "Show Product", product_path %>
+
+    </div>
   <% end %>
 </table>
